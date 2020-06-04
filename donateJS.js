@@ -25,10 +25,12 @@ $.get("域名/getJsonData.php", function getData(data) {
     }
     STR += "</tbody>";
     //将上面构造的字符串插入到table标签中
-    donate_tbody.innerHTML += STR
+    donate_tbody.innerHTML += STR;
+    beautiful();
 });
-//样式美化
-window.onload = function () {
+function beautiful() {
+    //样式美化
+    console.log("你好！");
     var arrayList = document.getElementsByTagName("tr");
     var pageText = document.getElementsByTagName("p")[0].innerHTML;
     var personNum = arrayList.length - 1, sumDonate = 0;
