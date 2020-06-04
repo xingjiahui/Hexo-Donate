@@ -1,21 +1,22 @@
 <?php
-    header("Content-Type: text/html;charset=utf8"); 
+  header("content-type:text/html;charset=gb2312");
     header('Access-Control-Allow-Origin:*');
-    $servername = "localhost";  
+    $servername = "localhost";
     $username = "数据库用户名";
     $password = "数据库密码";
     $dbname = "数据库名";
     // 创建连接
-    $con =mysqli_connect($servername, $username, $password, $dbname);  
+    $con =mysqli_connect($servername, $username, $password, $dbname);
+    mysqli_set_charset($con,"utf8");
 
-    // 检测连接  
-    $sql = "select `user_name`, `user_url`, `user_donate`, `pay_way`, `donate_confirm`, `donate_out` from donate_info order by `donate_id` asc";  
-    $result = mysqli_query($con,$sql);  
+    // 检测连接
+    $sql = "select `user_name`, `user_url`, `user_donate`, `pay_way`, `donate_confirm`, `donate_out` from donate_info order by `donate_id` asc";
+    $result = mysqli_query($con,$sql);
     if (!$result) {
         printf("Error: %s\n", mysqli_error($con));
         exit();
     }
-	
+
 	//输出数据库中的数据
     $jarr = array();
     while ($row = $result->fetch_array(MYSQLI_ASSOC)){
