@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打赏信息填写</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.bootcss.com/sweetalert/1.1.2/sweetalert.min.css" rel="stylesheet">
+  	<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/05/25/favicon.ico">
+</head>
+
+<body>
+    <!-- 创建封装容器 -->
+    <div class="container" id="container">
+
+        <!-- 注册页面 -->
+        <div class="form-container sign-up-container">
+            <form name="submit_form">
+                <h1>打赏信息</h1>
+                <input type="text" name="user_name" id="userName" placeholder="用户名" value="">
+                <input type="text" name="user_url" id="userUrl" placeholder="链接(非必填)">
+                <input type="text" name="user_donate" id="userDonate" placeholder="打赏金额">
+                <input type="text" name="pay_way" id="payWay" placeholder="微信/支付宝">
+                <button id="btn" type="button">上 传</button>
+            </form>
+            <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+        </div>
+
+        <!-- 登录页面 -->
+        <div class="form-container sign-in-container">
+            <div class="sign-in-img"></div>
+        </div>
+
+        <!-- 覆盖容器 -->
+        <div class="overlay-container">
+            <div class="overlay">
+
+                <!-- 覆盖左边 -->
+                <div class="overlay-penal overlay-left-container">
+                    <h1>支持开源工作！</h1>
+                    <p>
+                        为鼓励开源工作，会拿出一部分赏金以博主名义转赏。
+                    </p>
+                    <button class="ghost" id="signIn">返回打赏列表</button>
+                </div>
+                <!-- 覆盖右边 -->
+                <div class="overlay-penal overlay-right-container">
+                    <h1>感谢您的支持！</h1>
+                    <p>
+                        您所填写的打赏信息上传后，将自动更新到打赏列表。
+                    </p>
+                    <button class="ghost" id="signUp">返回打赏列表</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  	<script src="./main.js"></script>
+    <script src="https://cdn.bootcss.com/sweetalert/1.1.2/sweetalert.min.js"></script>
+</body>
+
+</html>
