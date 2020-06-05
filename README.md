@@ -38,7 +38,7 @@
 3. 填写打赏问卷并成功上传，可在打赏列表中`显示`填写的信息
 4. 数据上传成功后，博主会收到`QQ消息`提醒
 
-### 待更新内容（随时补充）
+### 待更新内容
 
 1. 区分`已核实`、`未核实`金额
 2. 丰富`QQ消息`提醒内容
@@ -59,11 +59,7 @@
 
 <img src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/06/03/5ab30519993983dfd77dc29b05f81e0a.png" width="80%"/>
 
-3. 操作GIF实录：
-
-<img src="https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/2020/06/03/f955737bc0ab1ba07b7ee726a51fd6b6.png" width="80%"/>
-
-注：QQ消息`提醒内容`以后会丰富。
+3. 操作GIF实录：受文件大小限制，请到 [这里](https://www.bilibili.com/video/BV1sK411p7nG/) 观看！
 
 ### 系统要求
 
@@ -72,7 +68,7 @@
 
 ## 使用该系统
 
-详见 [文档](https://xingjiahui.top) 
+详见 [文档](https://xingjiahui.top/34430.html)
 
 ## 感谢
 
